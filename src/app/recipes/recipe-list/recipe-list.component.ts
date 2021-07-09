@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { RecipeModule } from '../recipe.module';
+import { RecipeModel } from '../recipe.model';
 
 @Component({
   selector: 'app-recipe-list',
@@ -7,10 +7,10 @@ import { RecipeModule } from '../recipe.module';
   styleUrls: ['./recipe-list.component.css']
 })
 export class RecipeListComponent implements OnInit {
-  recipes: RecipeModule[]= [
-    new RecipeModule("Test Recipe", "This is just a test", "https://cdn.pixabay.com/photo/2015/08/25/03/50/background-906135_960_720.jpg"),
-    new RecipeModule("Test Recipe", "This is just a test", "https://cdn.pixabay.com/photo/2015/08/25/03/50/background-906135_960_720.jpg"),
-    new RecipeModule("Test Recipe", "This is just a test", "https://cdn.pixabay.com/photo/2015/08/25/03/50/background-906135_960_720.jpg")
+  recipes: RecipeModel[]= [
+    new RecipeModel("Test Recipe", "This is just a test", "https://cdn.pixabay.com/photo/2015/08/25/03/50/background-906135_960_720.jpg"),
+    new RecipeModel("Test Recipe", "This is just a test", "https://cdn.pixabay.com/photo/2015/08/25/03/50/background-906135_960_720.jpg"),
+    new RecipeModel("Test Recipe", "This is just a test", "https://cdn.pixabay.com/photo/2015/08/25/03/50/background-906135_960_720.jpg")
   ];
 
   constructor() { }
