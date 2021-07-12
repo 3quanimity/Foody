@@ -7,9 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'foody';
-  destination: string = "";
+  loadedFeature: string = "recipes";
 
-  updateDestination(newDestination){
-    this.destination = newDestination
+  onNavigate(feature: string){
+    this.loadedFeature = feature
   }
 }

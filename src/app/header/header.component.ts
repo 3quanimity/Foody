@@ -6,11 +6,11 @@ import { Component, EventEmitter, Output } from "@angular/core";
 })
 
 export class HeaderComponent {
-    @Output() destination = new EventEmitter<string>()
-    collapsed = true
+    @Output() featureSelected = new EventEmitter<string>();
+    collapsed = true;
 
-    onNavigate(event) {
-        this.destination.emit(event.target.textContent)
+    onSelect(feature: string) {
+        this.featureSelected.emit(feature);
     }
 
 }
